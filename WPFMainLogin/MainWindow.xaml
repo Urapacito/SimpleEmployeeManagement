@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFMainLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="220" Width="320">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <Label Content="Username:"/>
+            <TextBox x:Name="txtUsername"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <Label Content="Password:"/>
+            <PasswordBox x:Name="pbPassword"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Login" Click="btnLogin_Click" Margin="10"/>
+    </Grid>
+</Window>

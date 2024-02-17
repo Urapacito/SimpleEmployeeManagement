@@ -1,0 +1,105 @@
+﻿<Window x:Class="WPFEmpManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Window" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Employee DataGrid -->
+        <DataGrid x:Name="dataGridEmployees" IsReadOnly="True" Grid.Row="0" AutoGenerateColumns="False" CanUserAddRows="False" Margin="14,10,0,0" SelectionChanged="dataGridEmployees_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Employee ID" Binding="{Binding EmployeeID}" />
+                <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" />
+                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                <DataGridTextColumn Header="Role" Binding="{Binding RoleName}" />
+                <DataGridTextColumn Header="Department" Binding="{Binding DepartmentName}" />
+                <DataGridTextColumn Header="Username" Binding="{Binding Username}" />
+                <DataGridTextColumn Header="TeamID" Binding="{Binding TeamID}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Department and Role DataGrids -->
+        <Grid Grid.Row="1" Margin="14,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Department DataGrid -->
+            <DataGrid x:Name="dataGridDepartments" IsReadOnly="True" Grid.Column="0" AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="dataGridDepartments_SelectionChanged" Margin="0,0,10,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Department ID" Binding="{Binding DepartmentID}" />
+                    <DataGridTextColumn Header="Department Name" Binding="{Binding DepartmentName}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Role DataGrid -->
+            <DataGrid x:Name="dataGridRoles" IsReadOnly="True" Grid.Column="1" AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="dataGridRoles_SelectionChanged" Margin="10,0,0,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Role ID" Binding="{Binding RoleID}" />
+                    <DataGridTextColumn Header="Role Name" Binding="{Binding RoleName}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <!-- CRUD Operations -->
+        <TabControl Grid.Column="1" Grid.RowSpan="2" Margin="20,20,20,0">
+            <TabItem Header="Employee">
+                <StackPanel Height="362">
+                    <Label Content="First Name:" />
+                    <TextBox x:Name="txtFirstName" Width="200" Margin="0,0,0,10" />
+
+                    <Label Content="Last Name:" />
+                    <TextBox x:Name="txtLastName" Width="200" Margin="0,0,0,10" />
+
+                    <Label Content="Role:" />
+                    <ComboBox x:Name="cbRole" Width="200" Margin="0,0,0,10" DisplayMemberPath="RoleName">
+                        <!-- No items defined here -->
+                    </ComboBox>
+
+                    <Label Content="Department:" />
+                    <ComboBox x:Name="cbDepartment" Width="200" Margin="0,0,0,10" DisplayMemberPath="DepartmentName">
+                        <!-- No items defined here -->
+                    </ComboBox>
+
+                    <Button x:Name="btnAddEmployee" Content="Add" Click="btnAddEmployee_Click" Width="200" />
+                    <Button x:Name="btnUpdateEmployee" Content="Update" Click="btnUpdateEmployee_Click" Width="200" Margin="0,10,0,0" />
+                    <Button x:Name="btnDeleteEmployee" Content="Delete" Click="btnDeleteEmployee_Click" Width="200" Margin="0,10,0,0" Height="24" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Department">
+                <StackPanel>
+                    <Label Content="Department Name:" />
+                    <TextBox x:Name="txtDepartmentName" Width="200" Margin="0,0,0,10" />
+
+                    <Button x:Name="btnAddDepartment" Content="Add" Click="btnAddDepartment_Click" Width="200" />
+                    <Button x:Name="btnUpdateDepartment" Content="Update" Click="btnUpdateDepartment_Click" Width="200" Margin="0,10,0,0" />
+                    <Button x:Name="btnDeleteDepartment" Content="Delete" Click="btnDeleteDepartment_Click" Width="200" Margin="0,10,0,0" />
+                </StackPanel>
+            </TabItem>
+            <!-- New Role TabItem -->
+            <TabItem Header="Role">
+                <StackPanel>
+                    <Label Content="Role Name:" />
+                    <TextBox x:Name="txtRoleName" Width="200" Margin="0,0,0,10" />
+
+                    <Button x:Name="btnAddRole" Content="Add" Click="btnAddRole_Click" Width="200" />
+                    <Button x:Name="btnUpdateRole" Content="Update" Click="btnUpdateRole_Click" Width="200" Margin="0,10,0,0" />
+                    <Button x:Name="btnDeleteRole" Content="Delete" Click="btnDeleteRole_Click" Width="200" Margin="0,10,0,0" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+        <!-- Logout button at 3rd grid-->
+        <Button x:Name="btnLogout" Content="Logout" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="30" Margin="0,0,20,10" Click="btnLogout_Click" />
+    </Grid>
+</Window>
