@@ -308,5 +308,16 @@ namespace WPFEmpManager
 
             LogoutRequested?.Invoke(this, EventArgs.Empty);
         }
+
+        private void cbRole_DropDownOpened(object sender, EventArgs e)
+        {
+            cbRole.ItemsSource = roleService.GetRoles();
+        }
+
+        private void cbDepartment_DropDownOpened(object sender, EventArgs e)
+        {
+            cbDepartment.ItemsSource = departmentService.GetAllDepartments();
+        }
+
     }
 }

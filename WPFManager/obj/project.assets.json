@@ -942,6 +942,22 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "WPFEmployee/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WPFService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WPFEmployee.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WPFEmployee.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "WPFRepo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2453,6 +2469,11 @@
       "path": "../WPFDAO/WPFDAO.csproj",
       "msbuildProject": "../WPFDAO/WPFDAO.csproj"
     },
+    "WPFEmployee/1.0.0": {
+      "type": "project",
+      "path": "../WPFEmployee/WPFEmployee.csproj",
+      "msbuildProject": "../WPFEmployee/WPFEmployee.csproj"
+    },
     "WPFRepo/1.0.0": {
       "type": "project",
       "path": "../WPFRepo/WPFRepo.csproj",
@@ -2466,6 +2487,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "WPFEmployee >= 1.0.0",
       "WPFService >= 1.0.0"
     ]
   },
@@ -2496,6 +2518,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFEmployee\\WPFEmployee.csproj": {
+              "projectPath": "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFEmployee\\WPFEmployee.csproj"
+            },
             "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFService\\WPFService.csproj": {
               "projectPath": "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFService\\WPFService.csproj"
             }

@@ -32,6 +32,7 @@
             <TextBox x:Name="txtTeamName" TextChanged="txtTeamName_TextChanged"/>
             <Button Content="Update" Click="Update_Click" Margin="0,10,0,0"/>
             <Button Content="Logout" Click="Logout_Click" Margin="0,10,0,0"/>
+            <Button Content="User info" Click="ShowInfo_Click" Margin="0,10,0,0"/>
         </StackPanel>
     </Grid>
 </Window>

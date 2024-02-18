@@ -1,0 +1,15 @@
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\bin\Debug\net6.0-windows\WPFBO.deps.json
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\bin\Debug\net6.0-windows\WPFBO.runtimeconfig.json
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\bin\Debug\net6.0-windows\WPFBO.dll
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\bin\Debug\net6.0-windows\WPFBO.pdb
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.csproj.AssemblyReference.cache
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.AssemblyInfoInputs.cache
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.AssemblyInfo.cs
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.csproj.CoreCompileInputs.cache
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.sourcelink.json
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.dll
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\refint\WPFBO.dll
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.pdb
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\WPFBO.genruntimeconfig.cache
+D:\Study Stuff\SPRING STUFF\SPRING 2024\PRN 221\CODES AND PROJECTS\WPFEmpManager\WPFBO\obj\Debug\net6.0-windows\ref\WPFBO.dll

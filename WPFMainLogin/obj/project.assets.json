@@ -978,6 +978,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "WPFEmployee": "1.0.0",
           "WPFService": "1.0.0"
         },
         "compile": {

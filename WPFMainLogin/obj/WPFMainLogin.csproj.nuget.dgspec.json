@@ -451,6 +451,9 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
+              "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFEmployee\\WPFEmployee.csproj": {
+                "projectPath": "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFEmployee\\WPFEmployee.csproj"
+              },
               "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFService\\WPFService.csproj": {
                 "projectPath": "D:\\Study Stuff\\SPRING STUFF\\SPRING 2024\\PRN 221\\CODES AND PROJECTS\\WPFEmpManager\\WPFService\\WPFService.csproj"
               }

@@ -105,7 +105,34 @@ namespace WPFDAO.EmployeeDAO
             }
         }
 
-        // EmployeeDAO
+        // Add Employee
+        /*        public bool AddEmployee(EmployeeDTO newEmployee)
+                {
+                    try
+                    {
+                        // Convert DTO to BO
+                        Employee employee = new Employee
+                        {
+                            FirstName = newEmployee.FirstName,
+                            LastName = newEmployee.LastName,
+                            // Look up the RoleID and DepartmentID based on the RoleName and DepartmentName
+                            RoleId = _empManagementContext.Roles.FirstOrDefault(r => r.RoleName == newEmployee.RoleName).RoleId,
+                            DepartmentId = _empManagementContext.Departments.FirstOrDefault(d => d.DepartmentName == newEmployee.DepartmentName).DepartmentId,
+                        };
+
+                        // Add to database and save changes
+                        _empManagementContext.Employees.Add(employee);
+                        _empManagementContext.SaveChanges();
+
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        return false;
+                    }
+                }*/
+
         public bool AddEmployee(EmployeeDTO newEmployee)
         {
             try
@@ -124,6 +151,13 @@ namespace WPFDAO.EmployeeDAO
                 _empManagementContext.Employees.Add(employee);
                 _empManagementContext.SaveChanges();
 
+                // Create the default username and password
+                employee.Username = $"{employee.FirstName}@{employee.EmployeeId}";
+                employee.Password = $"{employee.FirstName}@{employee.EmployeeId}";
+
+                // Save the changes again
+                _empManagementContext.SaveChanges();
+
                 return true;
             }
             catch (Exception ex)
@@ -132,6 +166,7 @@ namespace WPFDAO.EmployeeDAO
                 return false;
             }
         }
+
 
         // Delete employee
         public bool DeleteEmployee(int employeeId)

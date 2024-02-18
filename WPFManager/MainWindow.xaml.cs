@@ -81,5 +81,15 @@ namespace WPFManager
 
             LogoutRequested?.Invoke(this, EventArgs.Empty);
         }
+
+        private void ShowInfo_Click(object sender, RoutedEventArgs e)
+        {
+            // Get the manager's information using the manager ID
+            var employeeid = int.Parse(txtManagerID.Text);
+
+            WPFEmployee.MainWindow employeeWindow = new WPFEmployee.MainWindow(employeeid);
+            employeeWindow.Show();
+        }
+
     }
 }

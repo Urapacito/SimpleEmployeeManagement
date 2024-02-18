@@ -62,12 +62,12 @@
                     <TextBox x:Name="txtLastName" Width="200" Margin="0,0,0,10" />
 
                     <Label Content="Role:" />
-                    <ComboBox x:Name="cbRole" Width="200" Margin="0,0,0,10" DisplayMemberPath="RoleName">
+                    <ComboBox x:Name="cbRole" Width="200" Margin="0,0,0,10" DisplayMemberPath="RoleName" DropDownOpened="cbRole_DropDownOpened">
                         <!-- No items defined here -->
                     </ComboBox>
 
                     <Label Content="Department:" />
-                    <ComboBox x:Name="cbDepartment" Width="200" Margin="0,0,0,10" DisplayMemberPath="DepartmentName">
+                    <ComboBox x:Name="cbDepartment" Width="200" Margin="0,0,0,10" DisplayMemberPath="DepartmentName" DropDownOpened="cbDepartment_DropDownOpened">
                         <!-- No items defined here -->
                     </ComboBox>
 

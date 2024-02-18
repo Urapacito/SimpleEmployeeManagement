@@ -27,7 +27,6 @@ namespace WPFEmployee
         {
             InitializeComponent();
             employeeService = new EmployeeService();
-
             var employeeInfo = employeeService.GetUserInfoById(employeeId);
 
             // Display the employee's information in the profile card
